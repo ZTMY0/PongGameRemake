@@ -23,10 +23,10 @@ https://github.com/raysan5/raylib#installation
 
 ## Usage
 Controls:
-  Left Paddle: Use W to move up(QWERTY) / use Z to move up(AZERTY) and S to move down.
-  Right Paddle: Use the UP arrow key to move up and the DOWN arrow key to move down.
-  Start Game: Press SPACE to start the game.
-  Restart Game: If the game is over, press R to restart.
+ - Left Paddle: Use W to move up(QWERTY) / use Z to move up(AZERTY) and S to move down.
+ - Right Paddle: Use the UP arrow key to move up and the DOWN arrow key to move down.
+ - Start Game: Press SPACE to start the game.
+ - Restart Game: If the game is over, press R to restart.
 
 ## Code Breakdown
 ```
