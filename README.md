@@ -20,7 +20,7 @@ To run this game, you need to have the Raylib library installed. Follow these st
 2. **Install Raylib**:
    https://github.com/raysan5/raylib#installation
    
-3.**Compile with MINGW OR CLANG**
+ 3.**Compile with MINGW OR CLANG**
 
 ## Usage
 Controls:
