@@ -29,6 +29,7 @@ Controls:
  - Restart Game: If the game is over, press R to restart.
 
 ## Code Breakdown
+# Colors Class
 ```
 class GColors {
 public:
@@ -41,3 +42,7 @@ public:
 };
 ```
 Defines a class GColors that contains custom color definitions used throughout the game
+# SimpleGame Class
+```
+
+
