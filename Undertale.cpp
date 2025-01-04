@@ -21,7 +21,7 @@ public:
     Texture2D ballTexture;
     Texture2D leftPaddleTexture;
     Texture2D rightPaddleTexture;
-    Texture2D startMenuBg; // Background for the start menu
+    Texture2D startMenuBg;
     const float paddleWidth = 60.0f;
     const float paddleHeight = 120.0f;
     GColors gc;
@@ -47,8 +47,7 @@ public:
 
     string PlayerWin;
     bool GameOver = false;
-    bool GameStarted = false; // Track if the game has started
-
+    bool GameStarted = false;
     void ResetPaddles() {
         LeftPad = {10, static_cast<float>(screenHeight / 2 - paddleHeight / 2), paddleWidth, paddleHeight};
         RightPad = {screenWidth - paddleWidth - 10, static_cast<float>(screenHeight / 2 - paddleHeight / 2), paddleWidth, paddleHeight};
@@ -93,7 +92,7 @@ public:
 
                 UpdateMusicStream(BGMusic);
 
-                // Player movement logic
+                // Player movement
                 if (IsKeyDown(KEY_W) && LeftPad.y > 0) {
                     LeftPad.y -= 400 * GetFrameTime ();
                 }
@@ -110,7 +109,7 @@ public:
                     RightPad.y += 400 * GetFrameTime();
                 }
 
-                // Ball movement logic
+                // Ball movement
                 BALL.x += BALLSPEED_X * GetFrameTime();
                 BALL.y += BALLSPEED_Y * GetFrameTime();
 
@@ -159,7 +158,7 @@ public:
     }
 
     void DrawStartMenu() {
-        DrawTexture(startMenuBg, 0, 0, WHITE); // Draw the start menu background
+        DrawTexture(startMenuBg, 0, 0, WHITE);
         DrawText("Undertale PingPong!", screenWidth / 2 - 200, screenHeight / 2 - 50, 40, WHITE);
         DrawText("Press SPACE to Start", screenWidth / 2 - 150, screenHeight / 2 + 10, 20, WHITE);
     }
@@ -184,7 +183,7 @@ public:
             }
         }
 
-        // Add credits and link to the original game
+        
         DrawText("Fangame made by Zaghdane Ihab", screenWidth / 2 - 150, screenHeight - 40, 20 , WHITE);
         DrawText("Original game : Undertale By Toby Fox", screenWidth / 2 - 150, screenHeight - 20, 20, WHITE);
     }
@@ -198,7 +197,7 @@ public:
         UnloadTexture(ballTexture);
         UnloadTexture(leftPaddleTexture);
         UnloadTexture(rightPaddleTexture);
-        UnloadTexture(startMenuBg); // Unload the start menu background
+        UnloadTexture(startMenuBg);
     }
 
     void GameLoop() {
@@ -219,7 +218,7 @@ public:
 
         PlayMusicStream(BGMusic);
         background = LoadTexture("Build/undertale.png");
-        startMenuBg = LoadTexture("Build\\start.png"); // Load the start menu background
+        startMenuBg = LoadTexture("Build\\start.png");
 
         while (!WindowShouldClose()) {
             GameUpdate();
