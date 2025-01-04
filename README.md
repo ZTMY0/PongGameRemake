@@ -11,7 +11,7 @@ This project is a simple 2D ping pong game inspired by the popular game Undertal
 - [Credits](#credits)
 
 ## Installation
-To run this game, you need to have the Raylib library installed. Follow these steps to set up the project:
+To run this game, Follow these steps to set up the project:
 
 1. **Clone the Repository**:
    ```bash
