@@ -11,15 +11,11 @@ This project is a simple 2D ping pong game inspired by the popular game Undertal
 - [Credits](#credits)
 
 ## Installation
-To run this game, Follow these steps to set up the project:
+To run this game:
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ZTMY0/PongGameUndertale.git
-   cd PongGameUndertale
-2. **Install Raylib**:
-https://github.com/raysan5/raylib#installation
-3.**Compile with MINGW OR CLANG**
 
 ## Usage
 Controls:
