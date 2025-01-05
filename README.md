@@ -112,7 +112,6 @@ void ResetBall() {
 
 # Func GameUpdate
 ```
- if (IsKeyDown(KEY_W) && LeftPad.y > 0) {
 void GameUpdate() {
         if (!GameStarted) {
             if (IsKeyPressed(KEY_SPACE)) {
