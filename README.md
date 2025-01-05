@@ -16,6 +16,8 @@ Pour exécuter ce jeu:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ZTMY0/PongGameUndertale.git
+   cd PongGameUndertale
+   explorer .
 
 ## Usage
 Controls:
