@@ -13,13 +13,13 @@ Raylib Official Website : www.raylib.com
 ## Installation
 Pour exécuter ce jeu:
 
-1. **Installer le ZIP**
-
-2. **Clone the Repository**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ZTMY0/PongGameUndertale.git
    cd PongGameUndertale
    explorer .
+   ```
+   
 
 ## Usage
 Controls:
