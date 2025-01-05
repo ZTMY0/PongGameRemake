@@ -112,7 +112,7 @@ public:
                 BALL.x += BALLSPEED_X * GetFrameTime();
                 BALL.y += BALLSPEED_Y * GetFrameTime();
 
-                /
+                
                 if (CheckCollisionRecs(LeftPad, BALL) && BALLSPEED_X < 0) {
                     PlaySound(HitSound);
                     BALL.x = LeftPad.x + LeftPad.width; 
