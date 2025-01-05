@@ -1,6 +1,6 @@
 # Undertale PingPong Game
 
-## Description
+## Introduction
 Ce projet est un simple jeu de ping-pong en 2D inspiré du jeu populaire Undertale. Il est construit en utilisant la bibliothèque Raylib, qui offre une interface simple pour la gestion des graphiques, de l'audio et des entrées. Le jeu comprend deux palettes contrôlées par les joueurs, une balle qui rebondit entre elles, et un système de score.
 
 Raylib Official Website : www.raylib.com
