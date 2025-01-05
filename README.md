@@ -41,7 +41,7 @@ public:
     Color Purple5 = (Color){ 110, 10, 245, 255 };
 };
 ```
-Définit une classe GColors qui contient des définitions de couleurs personnalisées utilisées dans tout le jeu
+Définit une classe GColors qui contient des codes couleurs RGB dans le jeu
 
 # Class SimpleGame
 ```
