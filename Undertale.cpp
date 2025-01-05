@@ -56,8 +56,8 @@ public:
     void ResetBall() {
         BALL.x = static_cast<float>(screenWidth / 2 - BALL.width / 2);
         BALL.y = static_cast<float>(screenHeight / 2 - BALL.height / 2);
-        BALLSPEED_X = (LeftHit ? 400.0f : -400.0f); // Reset ball direction horizontally
-        BALLSPEED_Y = (GetRandomValue(0, 1) == 0 ? 200.0f : -200.0f); // Randomize vertical direction
+        BALLSPEED_X = (LeftHit ? 400.0f : -400.0f); 
+        BALLSPEED_Y = (GetRandomValue(0, 1) == 0 ? 200.0f : -200.0f);
     }
 
     void UpdatePoints() {
@@ -92,7 +92,6 @@ public:
 
                 UpdateMusicStream(BGMusic);
 
-                // Player movement
                 if (IsKeyDown(KEY_W) && LeftPad.y > 0) {
                     LeftPad.y -= 400 * GetFrameTime ();
                 }
@@ -109,37 +108,35 @@ public:
                     RightPad.y += 400 * GetFrameTime();
                 }
 
-                // Ball movement
+                
                 BALL.x += BALLSPEED_X * GetFrameTime();
                 BALL.y += BALLSPEED_Y * GetFrameTime();
 
-                // Check for collisions with paddles
+                /
                 if (CheckCollisionRecs(LeftPad, BALL) && BALLSPEED_X < 0) {
                     PlaySound(HitSound);
-                    BALL.x = LeftPad.x + LeftPad.width; // Adjust ball position to the right of the left paddle
-                    BALLSPEED_X = labs(BALLSPEED_X) + speedIncrement; // Ensure the ball moves right and increment speed
-                    // Optional: Adjust vertical speed based on where the ball hits the paddle
+                    BALL.x = LeftPad.x + LeftPad.width; 
+                    BALLSPEED_X = labs(BALLSPEED_X) + speedIncrement; 
                     float paddleCenterY = LeftPad.y + LeftPad.height / 2;
                     float ballCenterY = BALL.y + BALL.height / 2;
-                    BALLSPEED_Y += (ballCenterY - paddleCenterY) * 0.1f; // Adjust this multiplier for desired effect
+                    BALLSPEED_Y += (ballCenterY - paddleCenterY) * 0.1f; 
                 } else if (CheckCollisionRecs(RightPad, BALL) && BALLSPEED_X > 0) {
                     PlaySound(HitSound);
                     BALL.x = RightPad.x - BALL.width;
-                    BALLSPEED_X = -labs(BALLSPEED_X) - speedIncrement; // Ensure the ball moves left and increment speed
+                    BALLSPEED_X = -labs(BALLSPEED_X) - speedIncrement;
                 }
 
-                // Check for collisions with top and bottom bars
+                
                 if (BALL.y < 0) {
                     PlaySound(HitSound);
                     BALL.y = 0;
-                    BALLSPEED_Y = labs(BALLSPEED_Y); // Bounce down
+                    BALLSPEED_Y = labs(BALLSPEED_Y); 
                 } else if (BALL.y + BALL.height > screenHeight) {
                     PlaySound(HitSound);
                     BALL.y = screenHeight - BALL.height;
-                    BALLSPEED_Y = -labs(BALLSPEED_Y); // Bounce up
+                    BALLSPEED_Y = -labs(BALLSPEED_Y);
                 }
 
-                // Check for scoring
                 if (BALL.x + BALL.width < 0) {
                     RightPoint++;
                     UpdatePoints();
