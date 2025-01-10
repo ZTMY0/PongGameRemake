@@ -86,7 +86,7 @@ public:
 - `Texture2D` sont utilisées pour stocker les textures images qui seront affichées dans le jeu, comme l'arrière-plan, la balle et les palettes
 - `Rectangle LeftPad` et `Rectangle RightPad` sont des rectangles représentant les palettes gauche et droite, positionnées au centre vertical de l'écran.
 - `Rectangle TopBAR` et `Rectangle BottomBAR` sont des rectangles représentant les barres en haut et en bas de l'écran.
-- `Rectangle BALL` est un rectangle représentant la balle, positionnée au centre de l'écran.
+- `Rectangle BALL` représente la balle, positionnée au centre de l'écran.
 - `BALLSPEED_X` et `BALLSPEED_Y` définissent la vitesse de la balle sur les axes X et Y.
 - `speedIncrement` est pour augmenter la vitesse de la balle lorsque elle est frappe par la palette
 # Func ResetPaddles
