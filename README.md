@@ -241,7 +241,7 @@ void UnloadALL() {
     }
 ```
 `UnloadAll` est pour liberer la memoire des resources et textures charger pendant le jeu pour ne pas etre stocker lorsque on quitte le jeu
-dans un sense `UnloadAll` fonctionne comme `~delete()`
+dans un sense `UnloadAll` fonctionne comme `~delete()` et `free`
 # GameLoop
 ```
     void GameLoop() {
