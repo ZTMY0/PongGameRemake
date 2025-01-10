@@ -67,7 +67,7 @@ public:
     float BALLSPEED_X = 400.0f;
     float BALLSPEED_Y = 200.0f;
     float speedIncrement = 20.0f;
-
+    bool LeftHit = true;
 
     int LeftPoint = 0;
     int RightPoint = 0;
