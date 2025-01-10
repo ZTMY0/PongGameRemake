@@ -55,8 +55,8 @@ public:
     Texture2D leftPaddleTexture;
     Texture2D rightPaddleTexture;
     Texture2D startMenuBg;
-    const float paddleWidth = 60.0f;
-    const float paddleHeight = 120.0f;
+    const float paddleWidth = 60.0;
+    const float paddleHeight = 120.0;
     GColors gc;
     Rectangle LeftPad = {10, static_cast<float>(screenHeight / 2 - paddleHeight / 2), paddleWidth, paddleHeight};
     Rectangle RightPad = {screenWidth - paddleWidth - 10, static_cast<float>(screenHeight / 2 - paddleHeight / 2), paddleWidth, paddleHeight};
@@ -64,9 +64,9 @@ public:
     Rectangle BottomBAR = {0, static_cast<float>(screenHeight - 5), static_cast<float>(screenWidth), 5};
 
     Rectangle BALL = {static_cast<float>(screenWidth / 2 - 15), static_cast<float>(screenHeight / 2 - 15), 30, 30};
-    float BALLSPEED_X = 400.0f;
-    float BALLSPEED_Y = 200.0f;
-    float speedIncrement = 20.0f;
+    float BALLSPEED_X = 400.0;
+    float BALLSPEED_Y = 200.0;
+    float speedIncrement = 20.0;
     bool LeftHit = true;
 
     int LeftPoint = 0;
